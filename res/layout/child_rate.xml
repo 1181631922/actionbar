@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    android:orientation="vertical" >
+ <RelativeLayout 
+             android:id="@+id/rl_image"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            >
+           <ImageView
+            android:id="@+id/imageButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:importantForAccessibility="no"
+            android:src="@drawable/image_selector" />
+
+         </RelativeLayout>
+    <LinearLayout 
+        android:id="@+id/ll_item3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+  
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_weight="4"
+                android:gravity="center_vertical"
+                android:text="成交价"
+                />
+
+            <EditText
+                android:id="@+id/et_forward_price"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_weight="6"
+                android:background="@null"
+                android:gravity="right|center_vertical"
+                android:hint="请输入成交价" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:orientation="horizontal" >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_weight="4"
+                android:gravity="center_vertical"
+                android:text="成交量"
+                 />
+            <EditText
+                android:id="@+id/et_forward_current_number"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_weight="6"
+                android:background="@null"
+                android:gravity="right|center_vertical"
+                android:hint="请输入成交量" />
+        </LinearLayout>
+         <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_weight="4"
+                android:gravity="center_vertical"
+                android:text="交货期"
+                 />
+
+            <EditText
+                
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_weight="6"
+                android:background="@null"
+                android:gravity="right|center_vertical"
+                android:hint="请输入交货期" />
+        </LinearLayout>
+        </LinearLayout>
+    
+</LinearLayout>

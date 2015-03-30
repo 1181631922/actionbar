@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+  <LinearLayout 
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      >
+ 
+  <!--   <ExpandableListView
+        android:id="@+id/expandableListView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+          android:cacheColorHint="#00000000"
+       android:listSelector="#00000000" 
+         >
+    </ExpandableListView>  -->
+    
+
+    <com.example.actionbar2.ExpForScorollView
+        android:id="@+id/expandableListView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:groupIndicator="@drawable/image_selector"
+        >
+    </com.example.actionbar2.ExpForScorollView> 
+
+    <LinearLayout
+        android:id="@+id/add_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" >
+
+        <TextView
+            android:id="@+id/tv_add"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="5dp"
+            android:text="增加"
+            android:textColor="@android:color/background_dark"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/tv_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="right|center_vertical"
+            android:paddingRight="20dp"
+            android:text="删除"
+            android:textColor="@android:color/background_dark"
+            android:textSize="15dp"
+            android:visibility="gone" />
+    </RelativeLayout>
+</LinearLayout>
+</ScrollView>
